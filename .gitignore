@@ -1,0 +1,89 @@
+# 基础忽略规则
+.DS_Store
+*.log
+*.pid
+*.seed
+
+# 依赖目录
+node_modules/
+jspm_packages/
+# 确保保留package-lock.json以保持依赖一致性
+
+# 构建产物
+dist/
+build/
+coverage/
+.eslintcache
+
+# 环境配置
+.env*.local
+.env
+.env.production
+.env.development
+
+# 编辑器配置
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 测试相关
+cypress/videos/
+cypress/screenshots/
+
+# 前端特定
+.cache/
+/package-lock.json.test
+*.css.map
+*.js.map
+*.sass.map
+
+# 调试文件
+debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 本地开发服务器
+.vercel/
+.next/
+
+# 系统文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 文档生成
+docs/_build/
+
+# 实验性文件
+*.local
+*.bak
+*.tmp
+
+# 二进制文件
+*.exe
+*.dll
+*.so
+*.dylib
+
+# 压缩包
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# 图像文件
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.t
