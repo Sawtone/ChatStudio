@@ -1,3 +1,9 @@
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+export const supabase = createClient(supabaseUrl, supabaseKey);
+
 export const askAI = async (chatHistory, parameters) => {
     const response = await fetch('http://localhost:5000/ask', {
         method: 'POST',
@@ -6,7 +12,7 @@ export const askAI = async (chatHistory, parameters) => {
         },
         body: JSON.stringify({
             messages: [
-                { role: 'system', content: parameters.systemPrompt },
+                { role: 'system', content: parameters.prompt },
                 ...chatHistory
             ],
             model: parameters.model,

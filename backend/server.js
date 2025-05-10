@@ -14,7 +14,7 @@ const PPIO_API_KEY = process.env.PPIO_API_KEY;
 app.post('/ask', async (req, res) => {
     // 测试：
     // console.log("收到请求：", req.body); // 输出前端发来的数据
-    // console.log("PPIO_API_KEY:", process.env.PPIO_API_KEY);
+    // console.log("PPIO_API_KEY:", req.body);
 
     const { messages, model, temperature, max_tokens, top_p, top_k, min_p, stop } = req.body;
 

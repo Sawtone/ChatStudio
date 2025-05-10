@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Input, Button, Space } from 'antd';
-import { askAI } from '../api';
+import { askAI } from '../route/api';
 
 const { TextArea } = Input;
 

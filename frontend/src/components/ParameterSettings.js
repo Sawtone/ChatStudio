@@ -27,7 +27,7 @@ const ParameterSettings = ({ parameters, setParameters }) => {
                     <Input.TextArea value={parameters.prompt} onChange={(e) => handleChange('prompt', e.target.value)} rows={4} />
                 </Form.Item>
                 <Form.Item label="最大 Tokens">
-                    <InputNumber min={1} value={parameters.max_tokens} onChange={(value) => handleChange('max_tokens', value)} />
+                    <InputNumber min={1} max={4000} value={parameters.max_tokens} onChange={(value) => handleChange('max_tokens', value)} />
                 </Form.Item>
                 <Form.Item label="温度" style={{ marginBottom: 3 }}>
                     <Slider min={0} max={2} step={0.1} value={parameters.temperature}
